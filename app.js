@@ -1,9 +1,11 @@
 // Buena suerte ! Espero que se te encianda la "bombilla"!
+
+// Estado inicial
 const bulb = document.getElementById("bulb");
 
-
+//Actualización del DOM
 // Opción 1
-// bulb.addEventListener("click", event =>{
+// bulb.addEventListener("click", () =>{
 //     if (bulb.classList.contains("bulb-off")){
 //         bulb.classList.remove("bulb-off");
 //         bulb.classList.add("bulb-on");
@@ -13,14 +15,14 @@ const bulb = document.getElementById("bulb");
 //     }
 // });
 
-
+//Actualización del DOM
 // Opción 2
-bulb.addEventListener("mouseover", (event) => {
+bulb.addEventListener("mouseover", () => {
   bulb.classList.remove("bulb-off");
   bulb.classList.add("bulb-on");
 });
 
-bulb.addEventListener("mouseout", (event) => {
+bulb.addEventListener("mouseout", () => {
     bulb.classList.remove("bulb-on");
     bulb.classList.add("bulb-off");
   });
